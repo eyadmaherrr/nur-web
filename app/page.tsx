@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import {
@@ -7,8 +8,10 @@ import {
   BookOpen,
   Compass,
   Heart,
+  Menu,
   Moon,
   Play,
+  X,
 } from 'lucide-react';
 
 import { revealDelay } from '../lib/reveal';
@@ -59,6 +62,9 @@ const features = [
 ];
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <main>
       <script
@@ -86,7 +92,31 @@ export default function Home() {
             Get Nur
             <ArrowRight size={16} />
           </Link>
+
+          <button
+            type="button"
+            className="menuButton"
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
+
+        {menuOpen && (
+          <div className="mobileMenu">
+            <a href="#features" onClick={closeMenu}>
+              Features
+            </a>
+            <a href="#experience" onClick={closeMenu}>
+              Experience
+            </a>
+            <Link href="/faq" onClick={closeMenu}>
+              FAQ
+            </Link>
+          </div>
+        )}
       </nav>
 
       {/* ========================================

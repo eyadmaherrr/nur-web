@@ -241,6 +241,30 @@ h2 em,
   transform-origin: left;
 }
 
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--glass);
+  color: var(--white);
+  cursor: pointer;
+  transition: background var(--t-base) ease, border-color var(--t-base) ease;
+}
+
+.menuButton:hover {
+  background: var(--glass-strong);
+  border-color: rgba(220, 184, 120, .35);
+}
+
+.mobileMenu {
+  display: none;
+}
+
 
 /* =========================================================
    5. BUTTONS
@@ -3018,6 +3042,36 @@ h2 em,
 @media (max-width: 800px) {
   .links {
     display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 22px 18px;
+    background: rgba(4, 20, 15, .97);
+    border-bottom: 1px solid rgba(150, 232, 194, .12);
+    animation: fadeIn 220ms ease;
+  }
+
+  .mobileMenu a {
+    padding: 15px 2px;
+    color: var(--muted-soft);
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(150, 232, 194, .08);
+    transition: color var(--t-base) ease;
+  }
+
+  .mobileMenu a:last-child {
+    border-bottom: 0;
+  }
+
+  .mobileMenu a:hover {
+    color: var(--gold);
   }
 
   .navInner {
