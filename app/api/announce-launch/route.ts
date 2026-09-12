@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getResend, RESEND_FROM } from '../../../lib/resend';
+import { renderEmail } from '../../../lib/emailTemplate';
 
 type Platform = 'ios' | 'android' | 'both';
 
@@ -33,15 +34,15 @@ export async function POST(request: Request) {
   const googlePlayUrl = process.env.GOOGLE_PLAY_URL;
   const appleAppStoreUrl = process.env.APPLE_APP_STORE_URL;
 
-  const links: string[] = [];
+  const cta: { label: string; url: string }[] = [];
   if (platform !== 'android' && appleAppStoreUrl) {
-    links.push(`<p><a href="${appleAppStoreUrl}">Get Nur on the App Store</a></p>`);
+    cta.push({ label: 'Get Nur on the App Store', url: appleAppStoreUrl });
   }
   if (platform !== 'ios' && googlePlayUrl) {
-    links.push(`<p><a href="${googlePlayUrl}">Get Nur on Google Play</a></p>`);
+    cta.push({ label: 'Get Nur on Google Play', url: googlePlayUrl });
   }
 
-  if (links.length === 0) {
+  if (cta.length === 0) {
     return NextResponse.json(
       { error: 'No store URL is configured for the requested platform(s)' },
       { status: 400 },
@@ -55,12 +56,15 @@ export async function POST(request: Request) {
     from: RESEND_FROM,
     subject: 'Nur is here',
     name: `Launch announcement (${platform})`,
-    html: `
-      <p>Salaam,</p>
-      <p>Nur is out now — thank you for waiting.</p>
-      ${links.join('\n')}
-      <p>— Nur</p>
-    `,
+    html: renderEmail({
+      preheader: 'Nur is out now — thank you for waiting.',
+      heading: 'Nur is here',
+      bodyHtml: `
+        <p style="margin:0 0 14px;">Salaam Alaikum,</p>
+        <p style="margin:0;">Nur is out now — thank you for waiting.</p>
+      `,
+      cta,
+    }),
     send: true,
   });
 

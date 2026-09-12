@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getResend, RESEND_FROM } from '../../../lib/resend';
+import { renderEmail } from '../../../lib/emailTemplate';
+import { SITE_URL } from '../../../lib/site';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -43,12 +45,16 @@ export async function POST(request: Request) {
     from: RESEND_FROM,
     to: email,
     subject: "You're on the Nur waitlist",
-    html: `
-      <p>Salaam,</p>
-      <p>You're on the list — we'll email this address the moment Nur launches.</p>
-      <p>No spam, unsubscribe anytime.</p>
-      <p>— Nur</p>
-    `,
+    html: renderEmail({
+      preheader: "You're on the list — we'll email you the moment Nur launches.",
+      heading: "You're on the list",
+      bodyHtml: `
+        <p style="margin:0 0 14px;">Salaam Alaikum,</p>
+        <p style="margin:0 0 14px;">You're on the Nur waitlist — we'll email this address the moment Nur launches.</p>
+        <p style="margin:0;">No spam, unsubscribe anytime.</p>
+      `,
+      cta: [{ label: 'Explore Nur', url: SITE_URL }],
+    }),
   });
 
   if (confirmation.error) {
