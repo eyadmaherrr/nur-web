@@ -12,6 +12,20 @@ import {
 } from 'lucide-react';
 
 import { revealDelay } from '../lib/reveal';
+import { SITE_URL, SITE_NAME } from '../lib/site';
+
+const appJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MobileApplication',
+  name: SITE_NAME,
+  description:
+    'A calm prayer companion bringing prayer times, Quran, Athkar, Tasbeeh and Qibla into one experience.',
+  url: SITE_URL,
+  image: `${SITE_URL}/icon.png`,
+  operatingSystem: 'iOS, Android',
+  applicationCategory: 'LifestyleApplication',
+  author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+};
 
 // Renders live clocks/countdowns and reads localStorage/geolocation, none of
 // which can match between server and client — skip SSR for it entirely
@@ -47,6 +61,11 @@ const features = [
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(appJsonLd) }}
+      />
+
       {/* ========================================
           NAVIGATION
           ======================================== */}

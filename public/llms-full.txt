@@ -1,0 +1,82 @@
+# Nur
+
+> Nur is a calm, focused prayer companion app for iOS and Android, currently in development. It brings prayer times, a Quran reader, guided Athkar (remembrance), a Tasbeeh counter, and a live Qibla compass together in one quiet, glass-styled interface. This site is Nur's marketing page — it also hosts a full interactive web recreation of the app so visitors can try it before it launches.
+
+Design direction: warm emerald and gold, glassmorphism, dark-only. Built by a solo developer (@eyadmaherrr).
+
+## Pages
+
+### Home
+https://downloadnur.com/
+
+A calmer way to practice. Make space for Nur.
+
+Prayer times, Quran, Athkar and Qibla — brought together in one quiet, beautifully designed companion. Designed for reflection, not distraction. Includes a live interactive recreation of the app in the browser (Home, Prayers, Quran, Athkar, Tasbeeh, Qibla screens), plus these sections:
+
+Everything you need — a little more presence. Every surface is designed to feel calm, intentional and easy to return to.
+1. Prayer, beautifully centered — Live prayer times, next-prayer countdowns and a calm daily rhythm.
+2. Read the Quran — A focused reader with Arabic scripture, translations, audio and progress.
+3. Remember Allah — Guided Athkar, daily remembrance and a simple Tasbeeh experience.
+4. Find the Qibla — A live compass experience designed to help you align with the Kaʿbah.
+
+Made to disappear into your day — less noise, more remembrance. Nur uses soft glass surfaces, deep emerald tones and warm gold details to keep the interface out of the way, so what matters stays in focus. Stats: 5 daily prayers, 6,236 Quran verses, infinite moments of dhikr.
+
+Try it yourself — more than a website, a glimpse of Nur. Explore the interactive experience: check prayer times, open the Quran, count your Athkar, use Tasbeeh, or find the Qibla.
+
+Your daily companion — carry a little Nur with you. Prayer, reflection and remembrance, whenever you need a quieter moment.
+
+Footer: Made for moments of remembrance. Made by @eyadmaherrr.
+
+---
+
+### Download
+https://downloadnur.com/download
+
+Coming soon. Carry Nur with you.
+
+The Nur app is being crafted with the same calm shown on the site. Visitors can join a waitlist to be emailed the moment it lands.
+
+Platforms:
+- iOS (iPhone, iPad) — requires iOS 15 or later
+- Android (Phone, Tablet) — requires Android 9 or later
+
+Waitlist: enter an email address to be notified. No spam, unsubscribe anytime.
+
+What you'll get:
+1. Prayer times that respect your day — Accurate timings by location, gentle next-prayer countdowns, no noise.
+2. A quiet Quran reader — Arabic scripture, translations, audio and reading progress, all offline.
+3. Athkar, always with you — Morning and evening remembrances, favourites, and a simple Tasbeeh.
+4. Qibla that just works — A live compass that tells you when you are aligned with the Kaʿbah.
+
+Until then, use Nur right here — the full interactive experience is already live on the home page: prayer times, Quran, Athkar and Qibla.
+
+---
+
+### FAQ
+https://downloadnur.com/faq
+
+Simple by design. Everything you need to know about Nur, its features and the experience being built.
+
+Q: What is Nur?
+A: Nur is a focused prayer companion bringing prayer times, Quran, Athkar, Tasbeeh and Qibla into one calm experience.
+
+Q: Does Nur work offline?
+A: Nur is designed around a simple, focused mobile experience. Specific offline availability can vary by feature and build.
+
+Q: Can I listen to the Quran?
+A: Yes. Nur includes Quran audio playback with support for different reciters.
+
+Q: Which prayer calculation method does Nur use?
+A: Nur supports configurable prayer calculation methods so prayer times can be calculated according to the method selected by the user.
+
+Q: Does Nur include Athkar?
+A: Yes. Nur includes guided Athkar collections designed to make daily remembrance simple and focused.
+
+Q: Does Nur have a Qibla compass?
+A: Yes. Nur includes a live Qibla compass that helps you align with the Kaʿbah.
+
+Q: Can I customize notifications?
+A: Yes. Nur can provide prayer and daily Dhikr reminders, depending on the notification settings enabled on your device.
+
+Q: Is Nur available on iOS and Android?
+A: Nur is being developed as a mobile experience. Availability may vary depending on the current release and platform.
