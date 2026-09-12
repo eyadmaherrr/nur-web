@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What is Nur?",
+    "answer": "Nur is a focused prayer companion bringing prayer times, Quran, Athkar, Tasbeeh and Qibla into one calm experience."
+  },
+  {
+    "question": "Does Nur work offline?",
+    "answer": "Nur is designed around a simple, focused mobile experience. Specific offline availability can vary by feature and build."
+  },
+  {
+    "question": "Can I listen to the Quran?",
+    "answer": "Yes. Nur includes Quran audio playback with support for different reciters."
+  },
+  {
+    "question": "Which prayer calculation method does Nur use?",
+    "answer": "Nur supports configurable prayer calculation methods so prayer times can be calculated according to the method selected by the user."
+  },
+  {
+    "question": "Does Nur include Athkar?",
+    "answer": "Yes. Nur includes guided Athkar collections designed to make daily remembrance simple and focused."
+  },
+  {
+    "question": "Does Nur have a Qibla compass?",
+    "answer": "Yes. Nur includes a live Qibla compass that helps you align with the Kaʿbah."
+  },
+  {
+    "question": "Can I customize notifications?",
+    "answer": "Yes. Nur can provide prayer and daily Dhikr reminders, depending on the notification settings enabled on your device."
+  },
+  {
+    "question": "Is Nur available on iOS and Android?",
+    "answer": "Nur is being developed as a mobile experience. Availability may vary depending on the current release and platform."
+  }
+]
