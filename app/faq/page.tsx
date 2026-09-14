@@ -152,6 +152,7 @@ export default function FAQPage() {
           >
             Made by @eyadmaherrr
           </a>
+          <Link href="/privacy">Privacy</Link>
           <span>© 2026 Nur</span>
         </div>
       </footer>

@@ -1084,6 +1084,38 @@ h2 em,
   color: var(--muted);
 }
 
+.legalCard {
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+  min-height: 0;
+}
+
+.legalCard h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: -0.2px;
+}
+
+.legalCard p {
+  margin: 0;
+  color: var(--muted-soft);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.legalCard a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legalCard a:hover {
+  color: var(--gold-bright);
+}
+
 .faqList {
   position: relative;
   z-index: 1;

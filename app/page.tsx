@@ -343,6 +343,7 @@ export default function Home() {
           >
             Made by @eyadmaherrr
           </a>
+          <Link href="/privacy">Privacy</Link>
           <span>© 2026 Nur</span>
         </div>
       </footer>
