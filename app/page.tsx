@@ -15,14 +15,14 @@ import {
 } from 'lucide-react';
 
 import { revealDelay } from '../lib/reveal';
-import { SITE_URL, SITE_NAME } from '../lib/site';
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_KEYWORDS } from '../lib/site';
 
 const appJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'MobileApplication',
   name: SITE_NAME,
-  description:
-    'A calm prayer companion bringing prayer times, Quran, Athkar, Tasbeeh and Qibla into one experience.',
+  description: SITE_DESCRIPTION,
+  keywords: SITE_KEYWORDS.join(', '),
   url: SITE_URL,
   image: `${SITE_URL}/icon.png`,
   operatingSystem: 'iOS, Android',

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { OG_IMAGE } from '../../lib/site';
 
-const title = 'Download Nur — Coming soon';
+const title = 'Download Nur — Prayer Times, Quran & Qibla App';
 const description =
-  'Nur is coming to iOS and Android. Join the waitlist to be notified the moment it lands.';
+  'Nur, a Muslim prayer times, Quran and Qibla app, is coming to iOS and Android. Join the waitlist to be notified the moment it launches.';
 
 export const metadata: Metadata = {
   title,

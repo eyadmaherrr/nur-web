@@ -3,7 +3,23 @@ import type { Metadata } from 'next';
 export const SITE_URL = 'https://downloadnur.com';
 export const SITE_NAME = 'Nur';
 export const SITE_DESCRIPTION =
-  'Nur is a calm, focused prayer companion for iOS and Android — prayer times, Quran, Athkar, Tasbeeh and Qibla brought together in one quiet experience. Try the interactive demo on the web.';
+  'Nur is a Muslim prayer app for iOS and Android — accurate prayer times, a Quran reader with audio, guided Athkar (dhikr), a Tasbeeh counter, and a live Qibla compass, all in one calm, distraction-free design. Try the interactive demo online.';
+
+export const SITE_KEYWORDS = [
+  'Nur app',
+  'prayer times app',
+  'Muslim prayer times',
+  'Salah times app',
+  'Quran app',
+  'Quran reader',
+  'Athkar app',
+  'dhikr app',
+  'Qibla compass',
+  'Qibla direction finder',
+  'Tasbeeh counter',
+  'Muslim prayer app',
+  'Islamic app',
+];
 
 /**
  * Next.js does not deep-merge `openGraph`/`twitter` between a layout and its

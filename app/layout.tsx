@@ -1,22 +1,15 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import ScrollReveal from '../components/ScrollReveal';
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, OG_IMAGE } from '../lib/site';
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_KEYWORDS, OG_IMAGE } from '../lib/site';
+
+const title = 'Nur — Muslim Prayer Times, Quran & Qibla App';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: 'Nur — A calmer way to practice',
+  title,
   description: SITE_DESCRIPTION,
-  keywords: [
-    'Nur',
-    'prayer times app',
-    'Quran app',
-    'Athkar app',
-    'Qibla compass',
-    'Tasbeeh counter',
-    'Muslim prayer app',
-    'Islamic app',
-  ],
+  keywords: SITE_KEYWORDS,
   authors: [{ name: 'eyadmaherrr', url: 'https://instagram.com/eyadmaherrr' }],
   alternates: { canonical: '/' },
   robots: {
@@ -28,14 +21,14 @@ export const metadata: Metadata = {
     type: 'website',
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: 'Nur — A calmer way to practice',
+    title,
     description: SITE_DESCRIPTION,
     images: OG_IMAGE,
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nur — A calmer way to practice',
+    title,
     description: SITE_DESCRIPTION,
     images: OG_IMAGE,
   },

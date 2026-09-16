@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import faq from '../../data/faq.json';
 import { OG_IMAGE } from '../../lib/site';
 
-const title = 'Nur — Frequently asked questions';
+const title = 'Nur FAQ — Prayer Times, Quran, Athkar & Qibla App';
 const description =
-  'Everything you need to know about Nur, its features and the experience we are building.';
+  "Answers about Nur's Islamic prayer times, Quran audio and reciters, Athkar reminders, the Qibla compass, notifications, and platform availability.";
 
 export const metadata: Metadata = {
   title,
