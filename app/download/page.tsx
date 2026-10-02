@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { revealDelay } from '../../lib/reveal';
+import { GOOGLE_PLAY_URL } from '../../lib/site';
 import {
   ArrowLeft,
   Apple,
@@ -12,6 +13,7 @@ import {
   Compass,
   Heart,
   Moon,
+  Play,
   Smartphone,
   Sparkles,
 } from 'lucide-react';
@@ -22,14 +24,14 @@ const platforms = [
     label: 'iOS',
     sub: 'iPhone · iPad',
     icon: Apple,
-    note: 'iOS 15 or later',
+    note: 'Coming soon',
   },
   {
     id: 'android',
     label: 'Android',
     sub: 'Phone · Tablet',
     icon: Smartphone,
-    note: 'Android 9 or later',
+    note: 'Available on Google Play',
   },
 ];
 
@@ -57,7 +59,7 @@ const features = [
 ];
 
 export default function DownloadPage() {
-  const [platform, setPlatform] = useState<'ios' | 'android'>('ios');
+  const [platform, setPlatform] = useState<'ios' | 'android'>('android');
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -120,7 +122,7 @@ export default function DownloadPage() {
       <section className="faqHero">
         <div className="eyebrow">
           <span className="dot" />
-          COMING SOON
+          NOW ON GOOGLE PLAY
         </div>
 
         <h1>
@@ -128,8 +130,8 @@ export default function DownloadPage() {
         </h1>
 
         <p>
-          The Nur app is being crafted with the same calm you see here.
-          Join the waitlist to be notified the moment it lands.
+          Nur is available now on Android. The iOS app is on its way —
+          join the waitlist to be notified the moment it lands.
         </p>
 
         {/* Platform picker */}
@@ -155,8 +157,23 @@ export default function DownloadPage() {
           ))}
         </div>
 
-        {/* Waitlist */}
-        {!subscribed ? (
+        {/* Android: download */}
+        {platform === 'android' && (
+          <div className="storeCta">
+            <a
+              className="primary"
+              href={GOOGLE_PLAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Play size={16} fill="currentColor" />
+              Get it on Google Play
+            </a>
+          </div>
+        )}
+
+        {/* iOS: waitlist */}
+        {platform === 'ios' && (!subscribed ? (
           <>
             <form className="waitlistForm" onSubmit={handleSubscribe}>
               <Bell size={18} aria-hidden="true" />
@@ -186,13 +203,15 @@ export default function DownloadPage() {
         ) : (
           <div className="waitlistConfirmed" role="status">
             <Check size={18} />
-            You&apos;re on the list — we&apos;ll email you when {platform === 'ios' ? 'iOS' : 'Android'} is ready.
+            You&apos;re on the list — we&apos;ll email you when iOS is ready.
           </div>
-        )}
+        ))}
 
         <p className="micro" style={{ marginTop: 18 }}>
           <span>✦</span>
-          No spam. Unsubscribe anytime.
+          {platform === 'ios'
+            ? 'No spam. Unsubscribe anytime.'
+            : 'Opens in the Google Play Store.'}
         </p>
       </section>
 

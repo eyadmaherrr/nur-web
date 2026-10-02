@@ -1,12 +1,12 @@
 # Nur
 
-> Nur is a calm, focused prayer companion app for iOS and Android, currently in development. It brings prayer times, a Quran reader, guided Athkar (remembrance), a Tasbeeh counter, and a live Qibla compass together in one quiet, glass-styled interface. This site is Nur's marketing page — it also hosts a full interactive web recreation of the app so visitors can try it before it launches.
+> Nur is a calm, focused prayer companion app, available now on Android via Google Play (https://play.google.com/store/apps/details?id=com.eyadmaher.nur&hl=en) with an iOS version coming soon. It brings prayer times, a Quran reader, guided Athkar (remembrance), a Tasbeeh counter, and a live Qibla compass together in one quiet, glass-styled interface. This site is Nur's marketing page — it also hosts a full interactive web recreation of the app so visitors can try it in the browser.
 
 Design direction: warm emerald and gold, glassmorphism, dark-only. Built by a solo developer (@eyadmaherrr).
 
 ## Pages
 - [Home](https://downloadnur.com/): Overview of Nur's features (prayer times, Quran, Athkar, Qibla) plus a live interactive demo of the app running in the browser.
-- [Download](https://downloadnur.com/download): Coming-soon page for iOS and Android with a waitlist signup, emailed the moment Nur launches on Google Play.
+- [Download](https://downloadnur.com/download): Download page: Google Play link for Android, plus an iOS waitlist signup emailed when the iOS app launches.
 - [FAQ](https://downloadnur.com/faq): Answers about what Nur is, offline support, Quran audio, prayer calculation methods, Athkar, Qibla, notifications, and platform availability.
 
 ## Optional

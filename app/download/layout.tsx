@@ -3,7 +3,7 @@ import { OG_IMAGE } from '../../lib/site';
 
 const title = 'Download Nur — Prayer Times, Quran & Qibla App';
 const description =
-  'Nur, a Muslim prayer times, Quran and Qibla app, is coming to iOS and Android. Join the waitlist to be notified the moment it launches.';
+  'Download Nur, a Muslim prayer times, Quran and Qibla app, on Google Play for Android. iOS is coming soon — join the waitlist to be notified.';
 
 export const metadata: Metadata = {
   title,

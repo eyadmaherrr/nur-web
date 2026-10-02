@@ -15,7 +15,13 @@ import {
 } from 'lucide-react';
 
 import { revealDelay } from '../lib/reveal';
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_KEYWORDS } from '../lib/site';
+import {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+  GOOGLE_PLAY_URL,
+} from '../lib/site';
 
 const appJsonLd = {
   '@context': 'https://schema.org',
@@ -27,6 +33,7 @@ const appJsonLd = {
   image: `${SITE_URL}/icon.png`,
   operatingSystem: 'iOS, Android',
   applicationCategory: 'LifestyleApplication',
+  installUrl: GOOGLE_PLAY_URL,
   author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
 };
 
@@ -145,10 +152,15 @@ export default function Home() {
           </p>
 
           <div className="actions">
-            <Link className="primary" href="/download">
-              Explore Nur
+            <a
+              className="primary"
+              href={GOOGLE_PLAY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get it on Google Play
               <ArrowRight size={18} />
-            </Link>
+            </a>
 
             <a className="secondary" href="#experience">
               <Play size={16} fill="currentColor" />
@@ -317,10 +329,21 @@ export default function Home() {
           moment.
         </p>
 
-        <Link className="primary" href="/download">
-          Download
-          <ArrowRight size={18} />
-        </Link>
+        <div className="actions" style={{ justifyContent: 'center' }}>
+          <a
+            className="primary"
+            href={GOOGLE_PLAY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get it on Google Play
+            <ArrowRight size={18} />
+          </a>
+
+          <Link className="secondary" href="/download">
+            iOS waitlist
+          </Link>
+        </div>
       </section>
 
       {/* ========================================

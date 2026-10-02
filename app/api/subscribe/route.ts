@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getResend, RESEND_FROM } from '../../../lib/resend';
 import { renderEmail } from '../../../lib/emailTemplate';
-import { SITE_URL } from '../../../lib/site';
+import { GOOGLE_PLAY_URL } from '../../../lib/site';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -46,14 +46,14 @@ export async function POST(request: Request) {
     to: email,
     subject: "You're on the Nur waitlist",
     html: renderEmail({
-      preheader: "You're on the list — we'll email you the moment Nur launches.",
+      preheader: "You're on the list — we'll email you the moment Nur launches on iOS.",
       heading: "You're on the list",
       bodyHtml: `
         <p style="margin:0 0 14px;">Salaam Alaikum,</p>
-        <p style="margin:0 0 14px;">You're on the Nur waitlist — we'll email this address the moment Nur launches.</p>
+        <p style="margin:0 0 14px;">You're on the Nur waitlist — we'll email this address the moment Nur launches on iOS. Nur is already available on Android — you can get it on Google Play any time.</p>
         <p style="margin:0;">No spam, unsubscribe anytime.</p>
       `,
-      cta: [{ label: 'Explore Nur', url: SITE_URL }],
+      cta: [{ label: 'Get Nur on Google Play', url: GOOGLE_PLAY_URL }],
     }),
   });
 

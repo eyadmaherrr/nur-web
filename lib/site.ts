@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 
 export const SITE_URL = 'https://downloadnur.com';
 export const SITE_NAME = 'Nur';
+export const GOOGLE_PLAY_URL =
+  'https://play.google.com/store/apps/details?id=com.eyadmaher.nur&hl=en';
 export const SITE_DESCRIPTION =
-  'Nur is a Muslim prayer app for iOS and Android — accurate prayer times, a Quran reader with audio, guided Athkar (dhikr), a Tasbeeh counter, and a live Qibla compass, all in one calm, distraction-free design. Try the interactive demo online.';
+  'Nur is a Muslim prayer app, now on Google Play for Android (iOS coming soon) — accurate prayer times, a Quran reader with audio, guided Athkar (dhikr), a Tasbeeh counter, and a live Qibla compass, all in one calm, distraction-free design. Download it on Google Play or try the interactive demo online.';
 
 export const SITE_KEYWORDS = [
   'Nur app',

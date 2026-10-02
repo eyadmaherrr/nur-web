@@ -1,6 +1,6 @@
 # Nur
 
-> Nur is a calm, focused prayer companion app for iOS and Android, currently in development. It brings prayer times, a Quran reader, guided Athkar (remembrance), a Tasbeeh counter, and a live Qibla compass together in one quiet, glass-styled interface. This site is Nur's marketing page — it also hosts a full interactive web recreation of the app so visitors can try it before it launches.
+> Nur is a calm, focused prayer companion app, available now on Android via Google Play (https://play.google.com/store/apps/details?id=com.eyadmaher.nur&hl=en) with an iOS version coming soon. It brings prayer times, a Quran reader, guided Athkar (remembrance), a Tasbeeh counter, and a live Qibla compass together in one quiet, glass-styled interface. This site is Nur's marketing page — it also hosts a full interactive web recreation of the app so visitors can try it in the browser.
 
 Design direction: warm emerald and gold, glassmorphism, dark-only. Built by a solo developer (@eyadmaherrr).
 
@@ -32,15 +32,15 @@ Footer: Made for moments of remembrance. Made by @eyadmaherrr.
 ### Download
 https://downloadnur.com/download
 
-Coming soon. Carry Nur with you.
+Now on Google Play. Carry Nur with you.
 
-The Nur app is being crafted with the same calm shown on the site. Visitors can join a waitlist to be emailed the moment it lands.
+Nur is available now on Android. The iOS app is on its way — visitors can join a waitlist to be emailed the moment it lands.
 
 Platforms:
-- iOS (iPhone, iPad) — requires iOS 15 or later
-- Android (Phone, Tablet) — requires Android 9 or later
+- Android (Phone, Tablet) — available now on Google Play: https://play.google.com/store/apps/details?id=com.eyadmaher.nur&hl=en
+- iOS (iPhone, iPad) — coming soon, waitlist open
 
-Waitlist: enter an email address to be notified. No spam, unsubscribe anytime.
+iOS waitlist: enter an email address to be notified. No spam, unsubscribe anytime.
 
 What you'll get:
 1. Prayer times that respect your day — Accurate timings by location, gentle next-prayer countdowns, no noise.
@@ -79,4 +79,4 @@ Q: Can I customize notifications?
 A: Yes. Nur can provide prayer and daily Dhikr reminders, depending on the notification settings enabled on your device.
 
 Q: Is Nur available on iOS and Android?
-A: Nur is being developed as a mobile experience. Availability may vary depending on the current release and platform.
+A: Nur is available now on Android — download it from Google Play. An iOS version is coming soon; join the waitlist on the download page to be emailed when it launches.

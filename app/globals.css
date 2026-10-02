@@ -3372,6 +3372,17 @@ h2 em,
   flex-shrink: 0;
 }
 
+.storeCta {
+  display: flex;
+  justify-content: center;
+  margin: 28px auto 0;
+}
+
+.storeCta .primary {
+  padding: 15px 26px;
+  font-size: 14px;
+}
+
 .waitlistError {
   width: min(100%, 520px);
   margin: 12px auto 0;
